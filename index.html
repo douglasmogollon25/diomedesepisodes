@@ -1,36 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Episodios Diomedes</title>
     <style>
-        body > div {
-            padding: 3rem;
-            display: flex;
-            flex-direction: column;
-        }
-        a {
-            padding: 5px;
-            font-size: 1.5rem;
-            color: white;
-            text-decoration: none;
-        }
-        a:visited {
-            color: grey;
-        }
-    
+      body > div {
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+      }
+      a {
+        padding: 5px;
+        font-size: 1.5rem;
+        color: white;
+        text-decoration: none;
+      }
+      a:visited {
+        color: grey;
+      }
     </style>
-</head>
-<body>
-    <div><h2>Capitulos Diomedes Diaz RCN</h1></div>
-    <script>
-        const capitulos = JSON.parse(`[{"path":"/diomedes-el-cacique-de-la-junta-capitulo-77-rafael-maria-tiene-una-fuerte-discusion-con","title":"Capítulo 077 | Rafael María tiene una fuerte discusión con Diomedes"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-78-yurleidis-le-confiesa-lucia-que-tiene-una-hija","title":"Capítulo 078 | Yurleidis le confiesa a Lucía que tiene una hija con Diomedes"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-79-yurleidis-enfrenta-diomedes-delante-de-lucia","title":"Capítulo 079 | Yurleidis enfrenta a Diomedes delante de Lucía"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-80-diomedes-compra-una-casa-en-valledupar-241","title":"Capítulo 080 | Diomedes compra una casa en Valledupar"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-81-diomedes-se-presenta-en-un-importante-programa","title":"Capítulo 081 | Diomedes se presenta en un importante programa de televisión"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-82-al-entrar-al-camerino-de-diomedes-lucia","title":"Capítulo 082 | Al entrar al camerino de Diomedes, Lucía encuentra a una mujer en ropa interior"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-83-diomedes-aparece-en-la-television-248","title":"Capítulo 083 | Diomedes aparece en la televisión"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-84-diomedes-dedica-concierto-su-papa-252","title":"Capítulo 084 | Diomedes dedica concierto a su papá"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-85-diomedes-lleva-varios-dias-desaparecido-sin","title":"Capítulo 085 | Diomedes lleva varios días desaparecido sin llegar a su casa"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-86-lucia-acude-la-policia-para-buscar-diomedes","title":"Capítulo 086 | Lucía acude a la Policía para buscar a Diomedes"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-87-lucia-encuentra-diomedes-con-otra-mujer-261","title":"Capítulo 087 | Lucía encuentra a Diomedes con otra mujer"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-88-parte-1-lucia-enfrenta-elvira-al-enterarse-de","title":"Capítulo 088 | Parte 1 - Lucía enfrenta a Elvira al enterarse de que Diomedes tiene más hijos"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-88-parte-2-el-mono-arjona-se-entera-de-la-verdad","title":"Capítulo 088 | Parte 2 - El mono Arjona se entera de la verdad"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-89-parte-1-lucia-decide-perdonar-diomedes-268","title":"Capítulo 089 - Parte 1 | Lucía decide perdonar a Diomedes "},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-89-parte-2-el-mono-arjona-amenaza-diomedes-269","title":"Capítulo 089 - Parte 2 | 'El mono' Arjona amenaza a Diomedes"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-90-parte-1-con-palabras-ofensivas-lucia-hiere","title":"Capítulo 090 - Parte 1 | Con fuertes palabras, Lucía hiere a Diomedes "},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-90-parte-2-diomedes-se-gana-el-congo-de-oro-273","title":"Capítulo 090 - Parte 2 | Diomedes se gana el 'Congo de Oro'"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-91-parte-1-colacho-le-aconseja-diomedes-que-se","title":"Capítulo 091- Parte 1 | Colacho le aconseja a Diomedes que se separe de Lucía"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-91-parte-2-consuelo-conoce-diomedes-277","title":"Capítulo 091 - Parte 2 | Consuelo conoce a Diomedes"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-92-parte-1-mariano-descubre-diomedes-consumiendo","title":"Capítulo 092 - Parte 1 | Mariano descubre a Diomedes consumiendo droga"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-92-parte-2-diomedes-sufre-un-infarto-282","title":"Capítulo 092 - Parte 2 | Diomedes sufre un infarto"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-93-parte-1-lucia-se-entera-de-que-esta-nuevamente","title":"Capítulo 093 - Parte 1 | Lucía se entera de que está nuevamente embarazada"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-93-parte-2-nace-el-hijo-de-diomedes-y-lucia-284","title":"Capítulo 093 - Parte 2 | Nace el hijo de Diomedes y Lucía "},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-94-consuelo-llega-al-apartamento-de-diomedes-y","title":"Capítulo 094 | Consuelo llega al apartamento de Diomedes y Lucía le abre la puerta"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-95-consuelo-y-diomedes-pasan-una-apasionada-noche","title":"Capítulo 095 | Consuelo y Diomedes pasan una apasionada noche"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-96-juancho-rois-vuelve-la-agrupacion-de-diomedes","title":"Capítulo 096 | Juancho Rois vuelve a la agrupación de Diomedes"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-97-diomedes-se-ve-obligado-aceptar-una-peligrosa","title":"Capítulo 097 | Diomedes se ve obligado a aceptar una peligrosa propuesta"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-98-diomedes-y-lucia-viven-un-trafico-momento-303","title":"Capítulo 098 | Diomedes y Lucía viven un trágico momento"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-99-parte-1-consuelo-encuentra-diomedes","title":"Capítulo 099 - Parte 1 | Consuelo encuentra a Diomedes inconsciente "},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-99-parte-2-la-vida-de-diomedes-se-sigue","title":"Capítulo 099 - Parte 2 | La vida de Diomedes se sigue desvaneciendo "},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-100-parte-1-consuelo-y-claudia-se-enteran-de-que","title":"Capítulo 100 - Parte 1 | Consuelo y Claudia se enteran de que Lucía está esperando otro hijo de Diomedes"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-100-parte-2-juacho-rois-se-vuelve-presentar-en-el","title":"Capítulo 100 - Parte 2 | Juacho Rois se vuelve a presentar en el festival vallenato"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-101-parte-1-diomedes-se-conoce-con-el-joe-arroyo","title":"Capítulo 101 - Parte 1 | Diomedes se conoce con el Joe Arroyo"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-101-parte-2-juancho-rois-queda-flechado-con-maria","title":"Capítulo 101 - Parte 2 | Juancho Rois queda flechado con María Paula y le pide que sea su novia"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-102-parte-1-beatriz-le-pide-diomedes-que-se","title":"Capítulo 102 - Parte 1 | Beatriz le pide a Diomedes que se separe de Lucía"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-102-parte-2-juancho-rois-se-mete-en-problemas-con","title":"Capítulo 102 - Parte 2 | Juancho Rois se mete en problemas con los papás de María Paula"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-103-parte-1-diomedes-graba-ron-pa-todo-el-mundo","title":"Capítulo 103 - Parte 1 | Diomedes graba 'Ron Pa Todo El Mundo' con El Joe Arroyo"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-103-parte-2-beatriz-ve-diomedes-y-consuelo","title":"Capítulo 103 -Parte 2 | Beatriz ve a Diomedes y a Consuelo besándose"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-104-parte-1-lo-que-inspiro-diomedes-para-componer","title":"Capítulo 104 - Parte 1 | Lo que inspiró a Diomedes a componer 'Mi primera cana'"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-104-parte-2-juancho-rois-se-casa-con-maria-paula","title":"Capítulo 104 - Parte 2 | Juancho Rois se casa con María Paula"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-105-parte-1-diomedes-reacciona-al-ver-lucia","title":"Capítulo 105 - Parte 1 | Diomedes reacciona al ver a Lucía bailando con otro hombre"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-105-parte-2-la-vida-de-juancho-rois-corre-peligro","title":"Capítulo 105 - Parte 2 | La vida de Juancho Rois corre peligro"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-106-parte-1-juancho-rois-muere-en-un-accidente","title":"Capítulo 106 - Parte 1 | Juancho Rois muere en un accidente aéreo"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-106-parte-2-diomedes-se-entera-de-la-muerte-de","title":"Capítulo 106 - Parte 2 | Diomedes se entera de la muerte de Juancho Rois"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-107-parte-1-diomedes-se-niega-ir-al-entierro-de","title":"Capítulo 107 - Parte 1 | Diomedes se niega a ir al entierro de Juancho Rois"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-107-parte-2-frente-al-ataud-diomedes-le-da-el","title":"Capítulo 107 - Parte 2 | Frente al ataúd, Diomedes le da el útlimo adiós a Juancho Rois"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-108-parte-1-diomedes-desaparece-348","title":"Capítulo 108 - Parte 1 | Diomedes desaparece"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-108-parte-2-joaco-decide-terminar-su-relacion","title":"Capítulo 108 - Parte 2 | Joaco decide terminar su relación laboral con Diomedes"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-109-parte-1-diomedes-le-compone-una-cancion","title":"Capítulo 109 - Parte 1 | Diomedes le compone una canción a Juancho Rois"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-109-parte-2-diomedes-conoce-betsy-liliana-355","title":"Capítulo 109 - Parte 2 | Diomedes conoce a Betsy Liliana"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-110-parte-1-diomedes-le-declara-su-amor-betsy-356","title":"Capítulo 110 - Parte 1 | Diomedes le declara su amor a Betsy"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-110-parte-2-lucia-encuentra-diomedes-con","title":"Capítulo 110 - Parte 2 | Lucía encuentra a Diomedes con Yurleidis y decide divorciarse"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-111-parte-1-con-el-corazon-destrozado-diomedes-se","title":"Capítulo 111 - Parte 1 | Con el corazón destrozado, Diomedes se despide de Lucía "},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-111-parte-2-diomedes-se-gradua-de-bachiller-365","title":"Capítulo 111 - Parte 2 | Diomedes se gradúa de bachiller"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-112-parte-1-el-nacimiento-de-la-hija-de-diomedes","title":"Capítulo 112 - Parte 1 | El nacimiento de la hija de Diomedes y Betsy Liliana"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-112-parte-2-lucia-se-confiesa-con-betsy-371","title":"Capítulo 112 - Parte 2 | Lucía se confiesa con Betsy"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-113-parte-1-diomedes-tiene-que-ser-sometido-una","title":"Capítulo 113 - Parte 1 | Diomedes tiene que ser sometido a una operación a corazón abierto"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-113-parte-2-el-mono-arjona-fallece-373","title":"Capítulo 113 - Parte 2 | 'El mono' Arjona fallece"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-114-parte-1-consuelo-le-cuenta-diomedes-que-esta","title":"Capítulo 114 - Parte 1 | Consuelo le cuenta a Diomedes que está esperando un hijo de él"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-114-parte-2-elvira-enfrenta-problemas-de-salud","title":"Capítulo 114 - Parte 2 | Elvira enfrenta problemas de salud"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-115-parte-1-la-extrana-muerte-de-claudia-viviana","title":"Capítulo 115 - Parte 1 | La extraña muerte de Claudia Viviana"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-115-parte-2-continua-la-busqueda-del-paradero-de","title":"Capítulo 115 - Parte 2 | Continua la búsqueda del paradero de Claudia Viviana"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-116-parte-1-diomedes-se-ve-involucrado-en-la","title":"Capítulo 116 - Parte 1 | Diomedes se ve involucrado en la muerte de Claudia Viviana"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-116-parte-2-diomedes-es-capturado-por-la-policia","title":"Capítulo 116 - Parte 2 | Diomedes es capturado por la Policía "},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-117-parte-1-diomedes-es-diagnosticado-con","title":"Capítulo 117 - Parte 1 | Diomedes es diagnosticado con Guillain Barre"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-117-parte-2-consuelo-es-condenada-un-ano-de","title":"Capítulo 117 - Parte 2 | Consuelo es condenada a un año de prisión"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-118-parte-1-diomedes-vuelve-caminar-401","title":"Capítulo 118 - Parte 1 | Diomedes vuelve a caminar"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-118-parte-2-diomedes-profugo-de-la-justicia-402","title":"Capítulo 118 - Parte 2 | Diomedes, prófugo de la justicia"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-119-parte-1-betsy-va-al-escondite-de-diomedes-405","title":"Capítulo 119 - Parte 1 | Betsy va al escondite de Diomedes "},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-119-parte-2-una-vez-mas-diomedes-escapa-de-la","title":"Capítulo 119 - Parte 2 | Una vez más, Diomedes escapa de la Policía"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-120-parte-1-diomedes-escapa-con-consuelo-407","title":"Capítulo 120 - Parte 1 | Diomedes escapa con Consuelo"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-120-parte-2-rafael-maria-le-hace-una-desgarradora","title":"Capítulo 120 - Parte 2 | Rafael María le hace una desgarradora confesión a Diomedes"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-121-parte-1-diomedes-se-entrega-la-policia-417","title":"Capítulo 121 - Parte 1 | Diomedes se entrega a la Policía"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-121-parte-2-en-un-interrogatorio-diomedes-cuenta","title":"Capítulo 121 | Parte 2 | Diomedes cuenta la verdad sobre la muerte de Claudia Viviana"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-122-parte-1-la-salud-de-rafael-maria-empeora-422","title":"Capítulo 122 - Parte 1 | La salud de Rafael María empeora"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-122-parte-2-consuelo-le-confiesa-la-verdad-elvira","title":"Capítulo 122 - Parte 2 | Consuelo le confiesa la verdad a Elvira "},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-123-parte-1-diomedes-obtiene-libertad-condicional","title":"Capítulo 123 - Parte 1 | Diomedes obtiene libertad condicional"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-123-parte-2-diomedes-vuelve-los-escenarios-428","title":"Capítulo 123 - Parte 2 | Diomedes vuelve a los escenarios "},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-124-parte-1-la-familia-de-diomedes-recibe-una","title":"Capítulo 124 | Parte 1 | La familia de Diomedes recibe una desgarradora noticia"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-124-parte-2-diomedes-es-trasladado-de-urgencias","title":"Capítulo 124 | Parte 2 | Diomedes es trasladado de urgencias al hospital"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-125-parte-1-rafael-maria-se-despide-para-siempre","title":"Capítulo 125 - Parte 1 | Rafael María se despide para siempre de su familia"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-125-parte-2-betsy-escucha-una-comprometedora","title":"Capítulo 125 | Parte 2 | Betsy escucha una comprometedora conversación de Diomedes "},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-126-parte-1-rosa-descubre-betsy-besandose-con","title":"Capítulo 126 - Parte 1 | Rosa descubre a Betsy besándose con Sergio "},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-126-parte-2-diomedes-se-entera-de-la-cruda-verdad","title":"Capítulo 126 - Parte 2 | Diomedes se entera de la cruda verdad"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-127-parte-1-las-malas-noticias-siguen-llegando-la","title":"Capítulo 127 - Parte 1 | Las malas noticias siguen llegando a la vida de Diomedes"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-127-parte-2-diomedes-es-nominado-los-grammys-448","title":"Capítulo 127 - Parte 2 | Diomedes es nominado a los Grammys "},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-128-parte-1-el-concierto-de-diomedes-junto-israel","title":"Capítulo 128 - Parte 1 | El concierto de Diomedes junto a Israel Franco y Martín Elías"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-128-parte-2-diomedes-le-pide-matrimonio-consuelo","title":"Capítulo 128 - Parte 2 | Diomedes le pide matrimonio a Consuelo"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-129-parte-1-adios-un-grande-del-folclor-vallenato","title":"Capítulo 129 - Parte 1 | Adiós a un grande del folclor vallenato"},{"path":"/diomedes-el-cacique-de-la-junta-capitulo-129-parte-2-consuelo-betsy-y-lucia-se-enfrentan","title":"Capítulo 129 - Parte 2 | Consuelo, Betsy y Lucía se enfrentan"}]`)
-        const divElement = document.querySelector('div')
-        capitulos.forEach(cap => {
-            divElement.innerHTML += `<a href="https://www.canalrcn.com/diomedes/capitulos${cap.path}">${cap.title}</a>`
-        })
-    </script>
-</body>
+  </head>
+  <body>
+    <div>
+      <h2>Capitulos Diomedes Diaz RCN</h2>
+      <a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-77-rafael-maria-tiene-una-fuerte-discusion-con"
+        >Capítulo 077 | Rafael María tiene una fuerte discusión con Diomedes</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-78-yurleidis-le-confiesa-lucia-que-tiene-una-hija"
+        >Capítulo 078 | Yurleidis le confiesa a Lucía que tiene una hija con Diomedes</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-79-yurleidis-enfrenta-diomedes-delante-de-lucia"
+        >Capítulo 079 | Yurleidis enfrenta a Diomedes delante de Lucía</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-80-diomedes-compra-una-casa-en-valledupar-241"
+        >Capítulo 080 | Diomedes compra una casa en Valledupar</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-81-diomedes-se-presenta-en-un-importante-programa"
+        >Capítulo 081 | Diomedes se presenta en un importante programa de televisión</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-82-al-entrar-al-camerino-de-diomedes-lucia"
+        >Capítulo 082 | Al entrar al camerino de Diomedes, Lucía encuentra a una mujer en ropa interior</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-83-diomedes-aparece-en-la-television-248"
+        >Capítulo 083 | Diomedes aparece en la televisión</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-84-diomedes-dedica-concierto-su-papa-252"
+        >Capítulo 084 | Diomedes dedica concierto a su papá</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-85-diomedes-lleva-varios-dias-desaparecido-sin"
+        >Capítulo 085 | Diomedes lleva varios días desaparecido sin llegar a su casa</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-86-lucia-acude-la-policia-para-buscar-diomedes"
+        >Capítulo 086 | Lucía acude a la Policía para buscar a Diomedes</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-87-lucia-encuentra-diomedes-con-otra-mujer-261"
+        >Capítulo 087 | Lucía encuentra a Diomedes con otra mujer</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-88-parte-1-lucia-enfrenta-elvira-al-enterarse-de"
+        >Capítulo 088 | Parte 1 - Lucía enfrenta a Elvira al enterarse de que Diomedes tiene más hijos</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-88-parte-2-el-mono-arjona-se-entera-de-la-verdad"
+        >Capítulo 088 | Parte 2 - El mono Arjona se entera de la verdad</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-89-parte-1-lucia-decide-perdonar-diomedes-268"
+        >Capítulo 089 - Parte 1 | Lucía decide perdonar a Diomedes </a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-89-parte-2-el-mono-arjona-amenaza-diomedes-269"
+        >Capítulo 089 - Parte 2 | 'El mono' Arjona amenaza a Diomedes</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-90-parte-1-con-palabras-ofensivas-lucia-hiere"
+        >Capítulo 090 - Parte 1 | Con fuertes palabras, Lucía hiere a Diomedes </a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-90-parte-2-diomedes-se-gana-el-congo-de-oro-273"
+        >Capítulo 090 - Parte 2 | Diomedes se gana el 'Congo de Oro'</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-91-parte-1-colacho-le-aconseja-diomedes-que-se"
+        >Capítulo 091- Parte 1 | Colacho le aconseja a Diomedes que se separe de Lucía</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-91-parte-2-consuelo-conoce-diomedes-277"
+        >Capítulo 091 - Parte 2 | Consuelo conoce a Diomedes</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-92-parte-1-mariano-descubre-diomedes-consumiendo"
+        >Capítulo 092 - Parte 1 | Mariano descubre a Diomedes consumiendo droga</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-92-parte-2-diomedes-sufre-un-infarto-282"
+        >Capítulo 092 - Parte 2 | Diomedes sufre un infarto</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-93-parte-1-lucia-se-entera-de-que-esta-nuevamente"
+        >Capítulo 093 - Parte 1 | Lucía se entera de que está nuevamente embarazada</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-93-parte-2-nace-el-hijo-de-diomedes-y-lucia-284"
+        >Capítulo 093 - Parte 2 | Nace el hijo de Diomedes y Lucía </a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-94-consuelo-llega-al-apartamento-de-diomedes-y"
+        >Capítulo 094 | Consuelo llega al apartamento de Diomedes y Lucía le abre la puerta</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-95-consuelo-y-diomedes-pasan-una-apasionada-noche"
+        >Capítulo 095 | Consuelo y Diomedes pasan una apasionada noche</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-96-juancho-rois-vuelve-la-agrupacion-de-diomedes"
+        >Capítulo 096 | Juancho Rois vuelve a la agrupación de Diomedes</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-97-diomedes-se-ve-obligado-aceptar-una-peligrosa"
+        >Capítulo 097 | Diomedes se ve obligado a aceptar una peligrosa propuesta</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-98-diomedes-y-lucia-viven-un-trafico-momento-303"
+        >Capítulo 098 | Diomedes y Lucía viven un trágico momento</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-99-parte-1-consuelo-encuentra-diomedes"
+        >Capítulo 099 - Parte 1 | Consuelo encuentra a Diomedes inconsciente </a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-99-parte-2-la-vida-de-diomedes-se-sigue"
+        >Capítulo 099 - Parte 2 | La vida de Diomedes se sigue desvaneciendo </a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-100-parte-1-consuelo-y-claudia-se-enteran-de-que"
+        >Capítulo 100 - Parte 1 | Consuelo y Claudia se enteran de que Lucía está esperando otro hijo de Diomedes</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-100-parte-2-juacho-rois-se-vuelve-presentar-en-el"
+        >Capítulo 100 - Parte 2 | Juacho Rois se vuelve a presentar en el festival vallenato</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-101-parte-1-diomedes-se-conoce-con-el-joe-arroyo"
+        >Capítulo 101 - Parte 1 | Diomedes se conoce con el Joe Arroyo</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-101-parte-2-juancho-rois-queda-flechado-con-maria"
+        >Capítulo 101 - Parte 2 | Juancho Rois queda flechado con María Paula y le pide que sea su novia</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-102-parte-1-beatriz-le-pide-diomedes-que-se"
+        >Capítulo 102 - Parte 1 | Beatriz le pide a Diomedes que se separe de Lucía</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-102-parte-2-juancho-rois-se-mete-en-problemas-con"
+        >Capítulo 102 - Parte 2 | Juancho Rois se mete en problemas con los papás de María Paula</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-103-parte-1-diomedes-graba-ron-pa-todo-el-mundo"
+        >Capítulo 103 - Parte 1 | Diomedes graba 'Ron Pa Todo El Mundo' con El Joe Arroyo</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-103-parte-2-beatriz-ve-diomedes-y-consuelo"
+        >Capítulo 103 -Parte 2 | Beatriz ve a Diomedes y a Consuelo besándose</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-104-parte-1-lo-que-inspiro-diomedes-para-componer"
+        >Capítulo 104 - Parte 1 | Lo que inspiró a Diomedes a componer 'Mi primera cana'</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-104-parte-2-juancho-rois-se-casa-con-maria-paula"
+        >Capítulo 104 - Parte 2 | Juancho Rois se casa con María Paula</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-105-parte-1-diomedes-reacciona-al-ver-lucia"
+        >Capítulo 105 - Parte 1 | Diomedes reacciona al ver a Lucía bailando con otro hombre</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-105-parte-2-la-vida-de-juancho-rois-corre-peligro"
+        >Capítulo 105 - Parte 2 | La vida de Juancho Rois corre peligro</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-106-parte-1-juancho-rois-muere-en-un-accidente"
+        >Capítulo 106 - Parte 1 | Juancho Rois muere en un accidente aéreo</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-106-parte-2-diomedes-se-entera-de-la-muerte-de"
+        >Capítulo 106 - Parte 2 | Diomedes se entera de la muerte de Juancho Rois</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-107-parte-1-diomedes-se-niega-ir-al-entierro-de"
+        >Capítulo 107 - Parte 1 | Diomedes se niega a ir al entierro de Juancho Rois</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-107-parte-2-frente-al-ataud-diomedes-le-da-el"
+        >Capítulo 107 - Parte 2 | Frente al ataúd, Diomedes le da el útlimo adiós a Juancho Rois</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-108-parte-1-diomedes-desaparece-348"
+        >Capítulo 108 - Parte 1 | Diomedes desaparece</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-108-parte-2-joaco-decide-terminar-su-relacion"
+        >Capítulo 108 - Parte 2 | Joaco decide terminar su relación laboral con Diomedes</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-109-parte-1-diomedes-le-compone-una-cancion"
+        >Capítulo 109 - Parte 1 | Diomedes le compone una canción a Juancho Rois</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-109-parte-2-diomedes-conoce-betsy-liliana-355"
+        >Capítulo 109 - Parte 2 | Diomedes conoce a Betsy Liliana</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-110-parte-1-diomedes-le-declara-su-amor-betsy-356"
+        >Capítulo 110 - Parte 1 | Diomedes le declara su amor a Betsy</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-110-parte-2-lucia-encuentra-diomedes-con"
+        >Capítulo 110 - Parte 2 | Lucía encuentra a Diomedes con Yurleidis y decide divorciarse</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-111-parte-1-con-el-corazon-destrozado-diomedes-se"
+        >Capítulo 111 - Parte 1 | Con el corazón destrozado, Diomedes se despide de Lucía </a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-111-parte-2-diomedes-se-gradua-de-bachiller-365"
+        >Capítulo 111 - Parte 2 | Diomedes se gradúa de bachiller</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-112-parte-1-el-nacimiento-de-la-hija-de-diomedes"
+        >Capítulo 112 - Parte 1 | El nacimiento de la hija de Diomedes y Betsy Liliana</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-112-parte-2-lucia-se-confiesa-con-betsy-371"
+        >Capítulo 112 - Parte 2 | Lucía se confiesa con Betsy</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-113-parte-1-diomedes-tiene-que-ser-sometido-una"
+        >Capítulo 113 - Parte 1 | Diomedes tiene que ser sometido a una operación a corazón abierto</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-113-parte-2-el-mono-arjona-fallece-373"
+        >Capítulo 113 - Parte 2 | 'El mono' Arjona fallece</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-114-parte-1-consuelo-le-cuenta-diomedes-que-esta"
+        >Capítulo 114 - Parte 1 | Consuelo le cuenta a Diomedes que está esperando un hijo de él</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-114-parte-2-elvira-enfrenta-problemas-de-salud"
+        >Capítulo 114 - Parte 2 | Elvira enfrenta problemas de salud</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-115-parte-1-la-extrana-muerte-de-claudia-viviana"
+        >Capítulo 115 - Parte 1 | La extraña muerte de Claudia Viviana</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-115-parte-2-continua-la-busqueda-del-paradero-de"
+        >Capítulo 115 - Parte 2 | Continua la búsqueda del paradero de Claudia Viviana</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-116-parte-1-diomedes-se-ve-involucrado-en-la"
+        >Capítulo 116 - Parte 1 | Diomedes se ve involucrado en la muerte de Claudia Viviana</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-116-parte-2-diomedes-es-capturado-por-la-policia"
+        >Capítulo 116 - Parte 2 | Diomedes es capturado por la Policía </a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-117-parte-1-diomedes-es-diagnosticado-con"
+        >Capítulo 117 - Parte 1 | Diomedes es diagnosticado con Guillain Barre</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-117-parte-2-consuelo-es-condenada-un-ano-de"
+        >Capítulo 117 - Parte 2 | Consuelo es condenada a un año de prisión</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-118-parte-1-diomedes-vuelve-caminar-401"
+        >Capítulo 118 - Parte 1 | Diomedes vuelve a caminar</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-118-parte-2-diomedes-profugo-de-la-justicia-402"
+        >Capítulo 118 - Parte 2 | Diomedes, prófugo de la justicia</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-119-parte-1-betsy-va-al-escondite-de-diomedes-405"
+        >Capítulo 119 - Parte 1 | Betsy va al escondite de Diomedes </a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-119-parte-2-una-vez-mas-diomedes-escapa-de-la"
+        >Capítulo 119 - Parte 2 | Una vez más, Diomedes escapa de la Policía</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-120-parte-1-diomedes-escapa-con-consuelo-407"
+        >Capítulo 120 - Parte 1 | Diomedes escapa con Consuelo</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-120-parte-2-rafael-maria-le-hace-una-desgarradora"
+        >Capítulo 120 - Parte 2 | Rafael María le hace una desgarradora confesión a Diomedes</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-121-parte-1-diomedes-se-entrega-la-policia-417"
+        >Capítulo 121 - Parte 1 | Diomedes se entrega a la Policía</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-121-parte-2-en-un-interrogatorio-diomedes-cuenta"
+        >Capítulo 121 | Parte 2 | Diomedes cuenta la verdad sobre la muerte de Claudia Viviana</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-122-parte-1-la-salud-de-rafael-maria-empeora-422"
+        >Capítulo 122 - Parte 1 | La salud de Rafael María empeora</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-122-parte-2-consuelo-le-confiesa-la-verdad-elvira"
+        >Capítulo 122 - Parte 2 | Consuelo le confiesa la verdad a Elvira </a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-123-parte-1-diomedes-obtiene-libertad-condicional"
+        >Capítulo 123 - Parte 1 | Diomedes obtiene libertad condicional</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-123-parte-2-diomedes-vuelve-los-escenarios-428"
+        >Capítulo 123 - Parte 2 | Diomedes vuelve a los escenarios </a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-124-parte-1-la-familia-de-diomedes-recibe-una"
+        >Capítulo 124 | Parte 1 | La familia de Diomedes recibe una desgarradora noticia</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-124-parte-2-diomedes-es-trasladado-de-urgencias"
+        >Capítulo 124 | Parte 2 | Diomedes es trasladado de urgencias al hospital</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-125-parte-1-rafael-maria-se-despide-para-siempre"
+        >Capítulo 125 - Parte 1 | Rafael María se despide para siempre de su familia</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-125-parte-2-betsy-escucha-una-comprometedora"
+        >Capítulo 125 | Parte 2 | Betsy escucha una comprometedora conversación de Diomedes </a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-126-parte-1-rosa-descubre-betsy-besandose-con"
+        >Capítulo 126 - Parte 1 | Rosa descubre a Betsy besándose con Sergio </a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-126-parte-2-diomedes-se-entera-de-la-cruda-verdad"
+        >Capítulo 126 - Parte 2 | Diomedes se entera de la cruda verdad</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-127-parte-1-las-malas-noticias-siguen-llegando-la"
+        >Capítulo 127 - Parte 1 | Las malas noticias siguen llegando a la vida de Diomedes</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-127-parte-2-diomedes-es-nominado-los-grammys-448"
+        >Capítulo 127 - Parte 2 | Diomedes es nominado a los Grammys </a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-128-parte-1-el-concierto-de-diomedes-junto-israel"
+        >Capítulo 128 - Parte 1 | El concierto de Diomedes junto a Israel Franco y Martín Elías</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-128-parte-2-diomedes-le-pide-matrimonio-consuelo"
+        >Capítulo 128 - Parte 2 | Diomedes le pide matrimonio a Consuelo</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-129-parte-1-adios-un-grande-del-folclor-vallenato"
+        >Capítulo 129 - Parte 1 | Adiós a un grande del folclor vallenato</a
+      ><a
+        href="https://www.canalrcn.com/diomedes/capitulos/diomedes-el-cacique-de-la-junta-capitulo-129-parte-2-consuelo-betsy-y-lucia-se-enfrentan"
+        >Capítulo 129 - Parte 2 | Consuelo, Betsy y Lucía se enfrentan</a
+      >
+    </div>
+  </body>
 </html>
